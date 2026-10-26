@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Personal Profile</title>
+        
+        <style>
+            .card{
+                background-color: white;
+                max-width: 600px;
+                mzrgin: 30px auto;
+                padding: 30px;
+                border-radius:15px;
+                box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+            }
+            .card{
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+            }
+
+            .card:hover{
+                transform: translateY(-5px);
+                box-shadow: 0 8px 25px rgba(107,33,168,0.2);
+            }
+
+            .intro{
+                color: #7e22ce;
+                font-weight:bold;
+            }
+
+            hr{
+                border: 1px solid #e9d5ff;
+            }
+            footer{
+                margin-top:25px;
+                color: #777;
+                font-size:14px;
+            }
+            body{
+                background-color: #f3e8ff;
+                font-family: Arial, sans-serif;
+                text-align: center;
+                padding: 30px;
+            }
+
+            h1{
+                color: #6b21a8;
+            }
+
+            h2{
+                color: #333333;
+                font-size:18px;
+            }
+
+            ul{
+                display: inline-block;
+                text-align: left;
+            }
+            button{
+                background-color: #7e22ce;
+                color: white;
+                padding: 12px 20px;
+                border: none;
+                border-raddius: 8px;
+                cursor: pointer;
+                font-size: 16px;
+                margin-top:15px;
+            }
+
+            button:hover{
+                background-color: #581c87;
+            }
+            .skills{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 10px;
+                margin: 20px 0;
+            }
+
+            .skills span{
+                background-color: #f3e8ff;
+                color: #6b21a8;
+                padding: 8px 14px;
+                border-radius: 20px;
+                font-size: 14px;
+                font-weight: bold;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="card">
+        <h1>Hi, I'm Shaik. Hafeefa</h1>
+
+        <p class="intro">B.Tech Student | Beginner Web Developer
+        </p>
+
+        <hr>
+
+        <h2>About Me</h2>
+        <p>
+            Hi! I am a first-year B.Tech Student learning web development and programming.
+        </p>
+        <h2>My Skills</h2>
+
+        <div class="skills"> <span>HTML5</span> <span>Python Basics</span>
+        <span>Data Entry</span> <span>Typing</span></div>
+        <ul> 
+            <li>HTML5</li>
+            <li>Basic Python</li>
+            <li>Typing and Data Entry</li>
+        </ul>
+
+        <h2>My Career Goal</h2>
+        <p>
+            I want to build useful website,
+            improve my coding skills, and gain practical experience.
+        </p>
+
+        <footer> My First Portfolio Project | 2026</footer>
+        <button onclick="showMessage()">Know More About Me</button>
+        
+        <p id="message"></p>
+
+        <script>
+            function showMessage(){
+                document.getElementById("message").innerHTML= 
+                "Thanks for visiting my portfolio! I'm learning something new every day.";
+            }
+        </script>
+    </div>
+    </body>
+</html>
